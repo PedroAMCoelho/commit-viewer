@@ -1,0 +1,16 @@
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.IoC.deps.json
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.IoC.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.IoC.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.Business.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.Services.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.Shared.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.Business.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.Services.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\bin\Debug\netstandard2.0\CommitViewer.Shared.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\obj\Debug\netstandard2.0\CommitViewer.IoC.csprojAssemblyReference.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\obj\Debug\netstandard2.0\CommitViewer.IoC.AssemblyInfoInputs.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\obj\Debug\netstandard2.0\CommitViewer.IoC.AssemblyInfo.cs
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\obj\Debug\netstandard2.0\CommitViewer.IoC.csproj.CoreCompileInputs.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\obj\Debug\netstandard2.0\CommitViewer.IoC.csproj.CopyComplete
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\obj\Debug\netstandard2.0\CommitViewer.IoC.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.IoC\obj\Debug\netstandard2.0\CommitViewer.IoC.pdb

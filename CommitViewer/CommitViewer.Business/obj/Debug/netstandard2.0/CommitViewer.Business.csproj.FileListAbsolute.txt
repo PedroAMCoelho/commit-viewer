@@ -1,0 +1,14 @@
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\bin\Debug\netstandard2.0\CommitViewer.Business.deps.json
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\bin\Debug\netstandard2.0\CommitViewer.Business.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\bin\Debug\netstandard2.0\CommitViewer.Business.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\bin\Debug\netstandard2.0\CommitViewer.Services.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\bin\Debug\netstandard2.0\CommitViewer.Shared.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\bin\Debug\netstandard2.0\CommitViewer.Services.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\bin\Debug\netstandard2.0\CommitViewer.Shared.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\obj\Debug\netstandard2.0\CommitViewer.Business.csprojAssemblyReference.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\obj\Debug\netstandard2.0\CommitViewer.Business.AssemblyInfoInputs.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\obj\Debug\netstandard2.0\CommitViewer.Business.AssemblyInfo.cs
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\obj\Debug\netstandard2.0\CommitViewer.Business.csproj.CoreCompileInputs.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\obj\Debug\netstandard2.0\CommitViewer.Business.csproj.CopyComplete
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\obj\Debug\netstandard2.0\CommitViewer.Business.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Business\obj\Debug\netstandard2.0\CommitViewer.Business.pdb

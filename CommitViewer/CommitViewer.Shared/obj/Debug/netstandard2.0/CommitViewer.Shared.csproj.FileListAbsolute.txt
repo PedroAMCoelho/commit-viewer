@@ -1,0 +1,9 @@
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\bin\Debug\netstandard2.0\CommitViewer.Shared.deps.json
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\bin\Debug\netstandard2.0\CommitViewer.Shared.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\bin\Debug\netstandard2.0\CommitViewer.Shared.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\obj\Debug\netstandard2.0\CommitViewer.Shared.csprojAssemblyReference.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\obj\Debug\netstandard2.0\CommitViewer.Shared.AssemblyInfoInputs.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\obj\Debug\netstandard2.0\CommitViewer.Shared.AssemblyInfo.cs
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\obj\Debug\netstandard2.0\CommitViewer.Shared.csproj.CoreCompileInputs.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\obj\Debug\netstandard2.0\CommitViewer.Shared.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.Shared\obj\Debug\netstandard2.0\CommitViewer.Shared.pdb
