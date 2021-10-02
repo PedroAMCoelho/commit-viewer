@@ -1,3 +1,8 @@
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.csprojAssemblyReference.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.AssemblyInfoInputs.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.AssemblyInfo.cs
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.csproj.CoreCompileInputs.cache
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\CommitViewer.API.exe
@@ -6,6 +11,8 @@ C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewe
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\CommitViewer.API.runtimeconfig.dev.json
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\CommitViewer.API.dll
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\CommitViewer.API.pdb
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\System.Web.Http.dll
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -30,11 +37,6 @@ C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewe
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\CommitViewer.Shared.pdb
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\CommitViewer.Business.pdb
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\CommitViewer.Services.pdb
-C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.csprojAssemblyReference.cache
-C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.AssemblyInfoInputs.cache
-C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.AssemblyInfo.cs
-C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.csproj.CoreCompileInputs.cache
-C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\staticwebassets\CommitViewer.API.StaticWebAssets.Manifest.cache
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\staticwebassets\CommitViewer.API.StaticWebAssets.xml
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\scopedcss\bundle\CommitViewer.API.styles.css

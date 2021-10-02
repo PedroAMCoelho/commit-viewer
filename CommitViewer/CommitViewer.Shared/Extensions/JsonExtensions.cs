@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -18,6 +19,11 @@ namespace CommitViewer.Shared.Extensions
         {
             var content = await httpResponseMessage.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(content);
+        }
+
+        public static T ResolveJson<T>(this JObject jobj, string target)
+        {
+            return JsonConvert.DeserializeObject<T>(jobj.SelectToken(target).ToString());
         }
     }
 }

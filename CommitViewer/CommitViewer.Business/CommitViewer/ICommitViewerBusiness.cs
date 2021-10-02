@@ -1,4 +1,4 @@
-﻿using CommitViewer.Shared.Models;
+﻿using CommitViewer.Business.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

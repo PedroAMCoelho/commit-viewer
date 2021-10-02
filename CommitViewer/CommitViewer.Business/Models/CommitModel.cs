@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CommitViewer.Shared.Models
+namespace CommitViewer.Business.Models
 {
     public class CommitModel
     {
