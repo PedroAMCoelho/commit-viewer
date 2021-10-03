@@ -1,4 +1,5 @@
-﻿using CommitViewer.Services.GitCliService.Exceptions;
+﻿using CommitViewer.Services.Constants;
+using CommitViewer.Services.GitCliService.Exceptions;
 using CommitViewer.Services.GitHubService.Options;
 using CommitViewer.Shared.Options;
 using Microsoft.Extensions.Logging;
@@ -12,14 +13,6 @@ namespace CommitViewer.Services.GitCliService
 {
     public class GitCliService : IGitCliService
     {
-        // --depth is how far the clone/pull will go in commit hierarchy to retrieve parent commits. 
-        // Note: Remember that each commit may have more than one parent.
-        private readonly string gitClone = "cd {0} > NUL && git.exe clone --quiet {1} --depth={2} . > NUL && git.exe --no-pager log --date=iso --skip={3} --max-count={4}";
-
-        private readonly string gitPull = "cd {0} > NUL && git.exe pull --quiet {1} --depth={2} > NUL && git.exe --no-pager log --date=iso --skip={3} --max-count={4}";
-
-        private readonly string findLocalRepo = "cd \\; cd Users; (Get-ChildItem -Attributes 'Directory+Hidden' -ErrorAction 'SilentlyContinue' -Filter '.git' -Recurse).FullName -like '*{0}*'";
-
         protected ILogger<GitCliService> logger { get; }
 
         public GitCliService(ILogger<GitCliService> logger)
@@ -50,10 +43,11 @@ namespace CommitViewer.Services.GitCliService
                 }
 
                 // formating command with input parameters
-                string command = string.Format(hasLocalRepository ? this.gitPull : this.gitClone,
+                string command = string.Format(hasLocalRepository ? GitConstants.GitPullCommand : GitConstants.GitCloneCommand,
                     hasLocalRepository ? localRepositoryPath : newRepositoryPath,
                     url,
                     page * page_results + page_results,
+                    GitConstants.JsonFormatGitLog,
                     page * page_results,
                     page_results);
 
@@ -69,7 +63,7 @@ namespace CommitViewer.Services.GitCliService
 
         private string GetExistingRepositoryPath(string repository)
         {
-            string cmd = string.Format(findLocalRepo, repository);
+            string cmd = string.Format(GitConstants.FindLocalRepo, repository);
 
             logger.LogDebug($"Creating a temporary powershell file");
             string tempFilePath = Path.GetTempPath() + Guid.NewGuid().ToString() + ".ps1";
@@ -116,6 +110,7 @@ namespace CommitViewer.Services.GitCliService
             logger.LogDebug($"Executing the temporary .bat file with command: {cmd}");
             ProcessStartInfo startInfo = new ProcessStartInfo("cmd", $"/C {tempFilePath}");
             startInfo.RedirectStandardOutput = true;
+            startInfo.RedirectStandardError = true;
             startInfo.CreateNoWindow = true;
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             startInfo.UseShellExecute = false;            
@@ -124,10 +119,20 @@ namespace CommitViewer.Services.GitCliService
             Process process = new Process();
             process.StartInfo = startInfo;
             process.Start();
+            string output = null;
+            try
+            {
+                output = await process.StandardOutput.ReadToEndAsync();
+                string errors = process.StandardError.ReadToEnd();
+            }
+            catch(Exception ex)
+            {
+                logger.LogDebug($"error", ex);
+            }
 
-            var output = await process.StandardOutput.ReadToEndAsync();
-            var gitLog = output.Remove(0, output.IndexOf("commit "));
-            return gitLog;
+            var firstNodeStartIndex = output.IndexOf("\"sha\":") - 2;
+            string gitLog = output.Substring(firstNodeStartIndex);
+            return $"[{gitLog}]";
         }
     }
 }

@@ -15,10 +15,9 @@ namespace CommitViewer.Shared.Extensions
         /// </summary>
         /// <param name="httpResponseMessage">The http response message.</param>
         /// <returns>A Task.</returns>
-        public async static Task<T> ResponseMessageToMap<T>(this HttpResponseMessage httpResponseMessage) where T : class
+        public async static Task<T> StringJsonToMap<T>(this string strJson) where T : class
         {
-            var content = await httpResponseMessage.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<T>(content);
+            return JsonConvert.DeserializeObject<T>(strJson);
         }
 
         public static T ResolveJson<T>(this JObject jobj, string target)
