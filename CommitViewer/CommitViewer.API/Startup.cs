@@ -9,6 +9,7 @@ using System.Net.Http;
 using CommitViewer.Shared.Options.Extensions;
 using CommitViewer.IoC.Business;
 using CommitViewer.Business.Mappings;
+using Microsoft.Extensions.Logging;
 
 namespace CommitViewer.API
 {
@@ -27,6 +28,11 @@ namespace CommitViewer.API
             services.AddControllers();
             services.AddScoped<HttpClient>();
 
+            services.AddLogging(opt =>
+            {
+                opt.AddConsole();
+            });
+
             services.AddOptionsConfig<GitHubOptions>(Configuration, true);
 
             services.AddAutoMapper(new[]
@@ -35,7 +41,8 @@ namespace CommitViewer.API
             });
 
             // Dependency Injection Containers
-            ExternalServiceCollectionExtensions.InitializeExternalApplicationServices(services, Configuration);
+            GitHubServiceCollectionExtensions.InitializeGitHubApplicationServices(services, Configuration);
+            GitCliServiceCollectionExtensions.InitializeGitHubApplicationServices(services, Configuration);
             CommitViewerServiceCollectionExtensions.InitializeCommitViewerApplicationServices(services, Configuration);
         }
 

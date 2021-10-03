@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "CommitViewer.Services/1.0.0": {
         "dependencies": {
+          "Cake.Powershell": "1.0.1",
           "CommitViewer.Shared": "1.0.0",
           "Microsoft.Extensions.Http": "5.0.0",
           "NETStandard.Library": "2.0.3",
@@ -16,6 +17,18 @@
         },
         "runtime": {
           "CommitViewer.Services.dll": {}
+        }
+      },
+      "Cake.Powershell/1.0.1": {
+        "runtime": {
+          "lib/net46/Cake.Powershell.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          },
+          "lib/net46/System.Management.Automation.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
@@ -250,6 +263,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Cake.Powershell/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tvN0tL++iDhXsRb4Xpcfv7owFQ/Isy5JOjsI/uEo8dAMu8fDw3/4mmNt6V+hTjk43/TJQoEmHZvSt5vmdrpZMA==",
+      "path": "cake.powershell/1.0.1",
+      "hashPath": "cake.powershell.1.0.1.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "type": "package",

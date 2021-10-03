@@ -29,6 +29,18 @@
           }
         }
       },
+      "Cake.Powershell/1.0.1": {
+        "runtime": {
+          "lib/net46/Cake.Powershell.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          },
+          "lib/net46/System.Management.Automation.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "dependencies": {
           "System.Threading.Tasks.Extensions": "4.5.4"
@@ -271,6 +283,7 @@
       },
       "CommitViewer.Services/1.0.0": {
         "dependencies": {
+          "Cake.Powershell": "1.0.1",
           "CommitViewer.Shared": "1.0.0",
           "Microsoft.Extensions.Http": "5.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
@@ -305,6 +318,13 @@
       "sha512": "sha512-uMgbqOdu9ZG5cIOty0C85hzzayBH2i9BthnS5FlMqKtMSHDv4ts81a2jS1VFaDBVhlBeIqJ/kQKjQY95BZde9w==",
       "path": "automapper/10.1.1",
       "hashPath": "automapper.10.1.1.nupkg.sha512"
+    },
+    "Cake.Powershell/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tvN0tL++iDhXsRb4Xpcfv7owFQ/Isy5JOjsI/uEo8dAMu8fDw3/4mmNt6V+hTjk43/TJQoEmHZvSt5vmdrpZMA==",
+      "path": "cake.powershell/1.0.1",
+      "hashPath": "cake.powershell.1.0.1.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "type": "package",
