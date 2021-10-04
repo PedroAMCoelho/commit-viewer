@@ -10,6 +10,9 @@ using CommitViewer.Shared.Options.Extensions;
 using CommitViewer.IoC.Business;
 using CommitViewer.Business.Mappings;
 using Microsoft.Extensions.Logging;
+using Polly.Extensions.Http;
+using System;
+using Polly;
 
 namespace CommitViewer.API
 {

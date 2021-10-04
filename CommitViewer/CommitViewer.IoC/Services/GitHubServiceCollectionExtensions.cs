@@ -1,4 +1,5 @@
-﻿using CommitViewer.Services.GitHubService;
+﻿using CommitViewer.IoC.ResiliencePolicies;
+using CommitViewer.Services.GitHubService;
 using CommitViewer.Services.GitHubService.Options;
 using CommitViewer.Shared.Options;
 using Microsoft.Extensions.Configuration;
@@ -12,6 +13,8 @@ namespace CommitViewer.IoC.Services
     {
         public static void InitializeGitHubApplicationServices(IServiceCollection services, IConfiguration configuration)
         {
+            var policyClass = new ResiliencePolicy();
+
             services.AddScoped<IGitHubService, GitHubService>();
 
             services.AddHttpClient(nameof(GitHubService), c => {
@@ -20,7 +23,8 @@ namespace CommitViewer.IoC.Services
                 c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
                 c.DefaultRequestHeaders.Add("User-Agent", nameof(CommitViewer));
                 c.DefaultRequestHeaders.Add("cache-control", "no-cache");
-            });
+            })
+            .AddPolicyHandler(policyClass.GetCircuitBreakerPolicy());
         }
     }
 }

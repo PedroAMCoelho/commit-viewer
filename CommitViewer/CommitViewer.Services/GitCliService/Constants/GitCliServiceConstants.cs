@@ -1,6 +1,6 @@
-﻿namespace CommitViewer.Services.Constants
+﻿namespace CommitViewer.Services.GitCliService.Constants
 {
-    public static class GitConstants
+    public static class GitCliServiceConstants
     {
         // --depth is how far the clone/pull will go in commit hierarchy to retrieve parent commits. 
         // Note: Remember that each commit may have more than one parent.
@@ -11,5 +11,7 @@
         public const string FindLocalRepo = "cd \\; cd Users; (Get-ChildItem -Attributes 'Directory+Hidden' -ErrorAction 'SilentlyContinue' -Filter '.git' -Recurse).FullName -like '*{0}*'";
 
         public const string JsonFormatGitLog = "%%n{%%n\\\"sha\\\":\\\"%%H\\\",%%n\\\"authorName\\\":\\\"%%an\\\",%%n\\\"authorEmail\\\":\\\"%%ae\\\",%%n\\\"date\\\":\\\"%%ad\\\",%%n\\\"message\\\":\\\"%%f\\\"%%n},";
+
+        public const int GitCliServiceTimeout = 300000;
     }
 }

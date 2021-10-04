@@ -24,13 +24,13 @@ namespace CommitViewer.Services.GitHubService
 
             var res = await client.GetAsync(endpoint);
 
-            await ValidResponse(res, endpoint, "GET");
+            await ValidateResponse(res, endpoint, "GET");
             
             return await res.Content.ReadAsStringAsync();
         }
 
         /// ToDo: Make this method more abstract, maybe in a middleware.
-        private async Task ValidResponse(HttpResponseMessage response, string httpVerb, string endpoint)
+        private async Task ValidateResponse(HttpResponseMessage response, string httpVerb, string endpoint)
         {
             if (response.StatusCode == HttpStatusCode.Unauthorized)
             {
