@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommitViewer.IoC", "CommitV
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommitViewer.Shared", "CommitViewer.Shared\CommitViewer.Shared.csproj", "{75177881-50BA-437B-9FB6-172C645DD62B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommitViewer.Business", "CommitViewer.Business\CommitViewer.Business.csproj", "{9CF9AF72-8E81-481D-B980-0D3304CDD0E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommitViewer.Business", "CommitViewer.Business\CommitViewer.Business.csproj", "{9CF9AF72-8E81-481D-B980-0D3304CDD0E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommitViewer.Tests", "CommitViewer.Tests\CommitViewer.Tests.csproj", "{6F7E367A-C5D0-498C-8216-0E7FA184B493}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9CF9AF72-8E81-481D-B980-0D3304CDD0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF9AF72-8E81-481D-B980-0D3304CDD0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF9AF72-8E81-481D-B980-0D3304CDD0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F7E367A-C5D0-498C-8216-0E7FA184B493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7E367A-C5D0-498C-8216-0E7FA184B493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7E367A-C5D0-498C-8216-0E7FA184B493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7E367A-C5D0-498C-8216-0E7FA184B493}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

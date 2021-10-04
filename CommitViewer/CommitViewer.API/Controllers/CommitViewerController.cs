@@ -24,5 +24,21 @@ namespace CommitViewer.API.Controllers
         [ResponseType(typeof(IEnumerable<CommitModel>))]
         public async Task<IActionResult> GetCommits(string owner, string repository, [FromQuery] int page = 1, int page_results = 10)
             => Ok(await commitViewerBusiness.GetCommits(owner, repository, page, page_results));
+
+        [HttpGet]
+        [Route("repositories/commits")]
+        [ResponseType(typeof(IEnumerable<CommitModel>))]
+        public async Task<IActionResult> GetCommitsByGitHubUrl([FromQuery] string gitHubUrl, int page = 1, int page_results = 10)
+        {
+           if (gitHubUrl.Contains("github"))
+           {
+               string[] path = gitHubUrl.Replace("https://", "").Replace(".git", "").Split('/');
+               return Ok(await commitViewerBusiness.GetCommits(path[1], path[2], page, page_results));
+           }
+           else
+           {
+               return BadRequest($"Invalid GitHub Url {gitHubUrl}");
+           }            
+        }      
     }
 }

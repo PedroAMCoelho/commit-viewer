@@ -1,0 +1,23 @@
+[{
+"sha":"7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+"authorName":"The Octocat",
+"authorEmail":"octocat@nowhere.com",
+"date":"2012-03-06 15:06:50 -0800",
+"message":"Merge-pull-request-6-from-Spaceghost-patch-1"
+},
+
+{
+"sha":"762941318ee16e59dabbacb1b4049eec22f0d303",
+"authorName":"Johnneylee Jack Rollins",
+"authorEmail":"Johnneylee.rollins@gmail.com",
+"date":"2011-09-13 21:42:41 -0700",
+"message":"New-line-at-end-of-file.-Signed-off-by-Spaceghost"
+},
+
+{
+"sha":"553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+"authorName":"cameronmcefee",
+"authorEmail":"cameron@github.com",
+"date":"2011-01-26 11:06:08 -0800",
+"message":"first-commit"
+},]
