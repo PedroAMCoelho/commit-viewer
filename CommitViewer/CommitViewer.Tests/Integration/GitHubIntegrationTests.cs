@@ -36,5 +36,19 @@ namespace CommitViewer.Tests.Integration
             //Assert
             gitHubServiceMock.Verify(mock => mock.GetGitHubCommits(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>(), It.IsAny<int>()), Times.Once());
         }
+
+        [Fact]
+        public async Task Should_Successfully_Obtain_Commits_Information()
+        {
+            var gitHubResponseExample = StreamReaderExtensions.ReadFileJsonString("githubResponseExample.txt");
+
+            gitHubServiceMock.Setup(s => s.GetGitHubCommits("octocat", "hello-world", 1, 1)).ReturnsAsync(gitHubResponseExample);
+
+            var result = await gitHubServiceMock.Object.GetGitHubCommits("octocat", "hello-world", 1, 1);
+
+            gitHubServiceMock.Verify(x => x.GetGitHubCommits(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>(), It.IsAny<int>()), Times.Once());
+
+            Assert.IsAssignableFrom<string>(result);
+        }
     }
 }

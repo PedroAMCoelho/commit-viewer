@@ -32,8 +32,8 @@ namespace CommitViewer.API.Controllers
         {
            if (gitHubUrl.Contains("github"))
            {
-               string[] path = gitHubUrl.Replace("https://", "").Replace(".git", "").Split('/');
-               return Ok(await commitViewerBusiness.GetCommits(path[1], path[2], page, page_results));
+               string[] repositoryInformation = gitHubUrl.Replace("https://", "").Replace(".git", "").Split('/');
+               return Ok(await commitViewerBusiness.GetCommits(repositoryInformation[1], repositoryInformation[2], page, page_results));
            }
            else
            {

@@ -1,12 +1,7 @@
-﻿using CommitViewer.Business.CommitViewer;
-using Polly;
-using Polly.CircuitBreaker;
+﻿using Polly;
 using Polly.Extensions.Http;
 using System;
-using System.Net;
 using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace CommitViewer.IoC.ResiliencePolicies
 {
@@ -16,7 +11,7 @@ namespace CommitViewer.IoC.ResiliencePolicies
         {
             return HttpPolicyExtensions
                 .HandleTransientHttpError()
-                .CircuitBreakerAsync(2, TimeSpan.FromSeconds(15));
+                .CircuitBreakerAsync(1, TimeSpan.FromSeconds(15));
         }
     }
 }
