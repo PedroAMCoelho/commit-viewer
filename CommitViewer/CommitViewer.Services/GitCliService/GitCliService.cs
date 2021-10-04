@@ -49,7 +49,7 @@ namespace CommitViewer.Services.GitCliService
                     url,
                     page * page_results + page_results,
                     GitCliServiceConstants.JsonFormatGitLog,
-                    page * page_results,
+                    (page == 0 ? page : page - 1) * page_results,
                     page_results);
 
                 logger.LogDebug($"Preparing to get {url} Git Log");
@@ -106,7 +106,7 @@ namespace CommitViewer.Services.GitCliService
             {
                 logger.LogInformation($"The git command {cmd} succeeded. Response message: {output}");
                 var firstNodeStartIndex = output.IndexOf("\"sha\":") - 2;
-                gitLog = output.Substring(firstNodeStartIndex);
+                gitLog = firstNodeStartIndex > 0 ? output.Substring(firstNodeStartIndex) : gitLog;
             }
 
             return $"[{gitLog}]";

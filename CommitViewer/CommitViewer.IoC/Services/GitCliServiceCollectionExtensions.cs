@@ -6,7 +6,7 @@ namespace CommitViewer.IoC.Services
 {
     public class GitCliServiceCollectionExtensions
     {
-        public static void InitializeGitHubApplicationServices(IServiceCollection services, IConfiguration configuration)
+        public static void InitializeGitCliApplicationServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IGitCliService, GitCliService>();
         }

@@ -22,7 +22,7 @@ namespace CommitViewer.API.Controllers
         [HttpGet]
         [Route("repositories/{owner}/{repository}/commits")]
         [ResponseType(typeof(IEnumerable<CommitModel>))]
-        public async Task<IActionResult> GetCommits(string owner, string repository, [FromQuery] int page = 0, int per_page = 10)
-            => Ok(await commitViewerBusiness.GetCommits(owner, repository, page, per_page));
+        public async Task<IActionResult> GetCommits(string owner, string repository, [FromQuery] int page = 1, int page_results = 10)
+            => Ok(await commitViewerBusiness.GetCommits(owner, repository, page, page_results));
     }
 }

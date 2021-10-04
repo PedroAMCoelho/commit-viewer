@@ -8,11 +8,8 @@ using Microsoft.Extensions.Hosting;
 using System.Net.Http;
 using CommitViewer.Shared.Options.Extensions;
 using CommitViewer.IoC.Business;
-using CommitViewer.Business.Mappings;
 using Microsoft.Extensions.Logging;
-using Polly.Extensions.Http;
-using System;
-using Polly;
+using Microsoft.OpenApi.Models;
 
 namespace CommitViewer.API
 {
@@ -28,6 +25,11 @@ namespace CommitViewer.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+            });
+
             services.AddControllers();
             services.AddScoped<HttpClient>();
 
@@ -38,14 +40,9 @@ namespace CommitViewer.API
 
             services.AddOptionsConfig<GitHubOptions>(Configuration, true);
 
-            services.AddAutoMapper(new[]
-            {
-                typeof(CommitViewerMapping)
-            });
-
             // Dependency Injection Containers
             GitHubServiceCollectionExtensions.InitializeGitHubApplicationServices(services, Configuration);
-            GitCliServiceCollectionExtensions.InitializeGitHubApplicationServices(services, Configuration);
+            GitCliServiceCollectionExtensions.InitializeGitCliApplicationServices(services, Configuration);
             CommitViewerServiceCollectionExtensions.InitializeCommitViewerApplicationServices(services, Configuration);
         }
 
@@ -62,6 +59,14 @@ namespace CommitViewer.API
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = "";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
 
             app.UseEndpoints(endpoints =>
             {

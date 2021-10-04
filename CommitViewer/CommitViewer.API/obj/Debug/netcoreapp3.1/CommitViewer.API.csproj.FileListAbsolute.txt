@@ -229,3 +229,8 @@ C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewe
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.Polly.dll
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\Polly.dll
 C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\Polly.Extensions.Http.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\pacoelho\repos\research\personal\commit-viewer\CommitViewer\CommitViewer.API\obj\Debug\netcoreapp3.1\CommitViewer.API.MvcApplicationPartsAssemblyInfo.cs
